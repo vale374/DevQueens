@@ -1,0 +1,89 @@
+body{
+    background-color: #B2EBF2;
+}
+h1 {
+    color: black;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.menu-boton {
+    background-color: rgb(162, 116, 204);
+    color: #000;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.menu-boton:hover{
+    background-color: rgb(209, 178, 239);
+    color: black;
+    transition: background-color 0.5s transform 0.2s ;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(168, 77, 187);
+    color:white;
+    text-align: center;
+    padding: 12px;
+    z-index: 1000;
+}
+
+header{
+    text-align: center;
+    animation: aparecer 1.5s ease-out forwards;
+    opacity: 0; /*Inicialmente invisible*/
+    margin: 50px;
+}
+@keyframes aparecer {
+0% {
+opacity: 0;
+transform: translateY(50px);
+}
+100% {
+opacity: 1;
+transform: translateY(0);
+}
+}
+.productos-contenedor{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 5px;
+}
+
+.producto{
+    background-color: blue;
+    border-radius: 12px;
+    box-sizing: 0 4px 10px rgba(0, 0, 0, 1);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    padding: 10px;
+}
+
+.img{
+    width: 200px;
+    height: 200px;  
+    object-fit: cover;
+    border-radius: 10px;
+}
+img{
+    width: 200px;
+    height: 200px;  
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.moverimagen{
+    width: 40%;
+    height: 100%;
+    animation: aparecer 4.5s ease-out forwards;
+}
+
+main{
+    text-align: center;
+}
