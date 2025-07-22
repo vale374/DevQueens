@@ -82,5 +82,8 @@ img{
     width: 40%;
     height: 100%;
     animation: aparecer 4.5s ease-out forwards;
+}
 
+main{
+    text-align: center;
 }
